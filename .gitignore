@@ -46,3 +46,6 @@ build/
 # Backup files
 *~
 *.bak
+
+# Clang cache
+.cache/
