@@ -63,6 +63,10 @@ struct String {
         return SubString(this->str + i, i);
     }
 
+    friend std::ostream& operator<<(std::ostream &os, String const &other) {
+        return os << other.str;
+    }
+
     operator const char*() const {
         return this->str;
     }
